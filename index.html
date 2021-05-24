@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Covid-19 Vaccine Appointment</h1>
+<p>
+<a href="https://covid-19.ontario.ca/book-vaccine/">Visit covid-19.ontario.ca!</a>
+<br>
+<a href="https://covid-19.ontario.ca/book-vaccine/">
+<img src="https://www.ctvnews.ca/polopoly_fs/1.5368153.1617121022!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg" height="300" width="500" alt="COVID-19 vaccine clinic in Ottawa"></a>
+<br>
+<form action="/action_page.php">
+  <label for="fname"><strong>1.What is your name:</strong></label><br>
+  <input type="text" id="fname" name="fname"><br>
+  
+  <p><strong>2.Your gender:</strong></p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+  
+  <p><strong>3.Which area are you living in:<strong></p>
+  <label for="area">Choose an area:</label>
+  <select id="area" name="area">
+    <option value="Downtown">Downtown</option>
+    <option value="Kanata">Kanata</option>
+    <option value="Barrhaven">Barrhaven</option>
+    <option value="Orleans">Orleans</option>
+  </select>
+  
+  <p><strong>4.Did you have any symptoms:</strong></p>
+  <input type="checkbox" id="symptom1" name="symptom1" value="fever">
+  <label for="symptom1">Fever</label><br>
+  <input type="checkbox" id="symptom2" name="symptom2" value="dry cough">
+  <label for="symptom2">Dry cough</label><br>
+  <input type="checkbox" id="symptom3" name="symptom3" value="tiredness">
+  <label for="symptom3">Tiredness</label><br>
+  <input type="checkbox" id="symptom4" name="symptom4" value="None">
+  <label for="symptom4">None</label><br>
+  
+  <p><strong>5.Comments:</strong></p>
+  <textarea name="message" rows="10" cols="30"></textarea><br>
+  
+  <input type="submit" value="Submit">
+</form> 
+
+<footer>
+  <p>Website designed by Iris Ji<br></p>
+</footer>
+
+</p>
+
+</body>
+</html>
