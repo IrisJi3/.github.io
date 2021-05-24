@@ -3,11 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page Title</title>
+<title>Lab1 Questionnaire</title>
 <link rel="stylesheet" href="style/design.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
+    <p>
+      <a href="#home" class="btn btn-primary" role="button">Home</a>
+      <a href="#about" class="btn btn-primary" role="button">About</a>
+      <a href="#contact" class="btn btn-primary" role="button">Contact</a>
+    </p>
 <a href="https://covid-19.ontario.ca/book-vaccine/">Visit covid-19.ontario.ca!</a>
 <br>
 <a href="https://covid-19.ontario.ca/book-vaccine/">
@@ -15,10 +20,10 @@
 <br>
 <div class="content">
       <form action="index.php" name="my form" method="POST" autocomplete="on">
-      <label for="fname"><strong>1.What is your name:</strong></label><br>
+      <h3><label for="fname"><strong>1.What is your name:</strong></label></h3><br>
       <input type="text" id="fname" name="fname"><br>
       
-  <p><strong>2.Your gender:</strong></p>
+  <h3><strong>2.Your gender:</strong></h3>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
   <input type="radio" id="female" name="gender" value="female">
@@ -26,7 +31,7 @@
   <input type="radio" id="other" name="gender" value="other">
   <label for="other">Other</label><br>
        
-  <p><strong>3.Which area are you living in:<strong></p>
+  <h3><strong>3.Which area are you living in:<strong></h3>
   <label for="area">Choose an area:</label>
   <select id="area" name="area">
     <option value="Downtown">Downtown</option>
@@ -35,7 +40,7 @@
     <option value="Orleans">Orleans</option>
   </select>
   
-    <p><strong>4.Did you have any symptoms:</strong></p>
+    <h3><strong>4.Did you have any symptoms:</strong></h3>
   <input type="checkbox" id="symptom1" name="symptom1" value="fever">
   <label for="symptom1">Fever</label><br>
   <input type="checkbox" id="symptom2" name="symptom2" value="dry cough">
@@ -45,7 +50,7 @@
   <input type="checkbox" id="symptom4" name="symptom4" value="None">
   <label for="symptom4">None</label><br>
   
-  <p><strong>5.Comments:</strong></p>
+  <h3><strong>5.Comments:</strong></h3>
   <textarea name="message" rows="10" cols="30"></textarea><br>
   
   <input type="submit" value="Submit">
@@ -53,6 +58,19 @@
 	</div> 
 	  <div class="footer-basic">
         <footer>
+		<div class="social">
+			<a href="#"><i class="icon ion-social-instagram"></i></a>
+			<a href="#"><i class="icon ion-social-snapchat"></i></a>
+			<a href="#"><i class="icon ion-social-twitter"></i></a>
+			<a href="#"><i class="icon ion-social-facebook"></i></a>
+			</div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
             <p class="copyright">Website designed by Iris Ji</p>
         </footer>
     </div>
