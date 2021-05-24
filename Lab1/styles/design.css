@@ -1,11 +1,6 @@
 html {
   background-color: white;
 }
-h3 {
-  height: 100%;
-  color: black;
-  line-height: 1.8;
-}
 
 input[type=text]{
 width:100%
