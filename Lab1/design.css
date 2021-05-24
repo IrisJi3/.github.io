@@ -12,6 +12,17 @@ padding: 12px 20px;
 margin: 8px 0;	
 box-sizing:border-box;	
 }
+#signature {
+  text-align: right;
+  color: red;
+  font-style: italic;
+  font-size: 75%;
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
 
 .footer-basic .copyright {
   margin-top:15px;
