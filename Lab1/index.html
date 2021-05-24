@@ -3,23 +3,21 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page Title</title>
-<link rel="stylesheet" href="design.css">
+<title>Covid-19 Vaccine Appointment</title>
+<link rel="stylesheet" href="styles/design.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-
-<h1>Covid-19 Vaccine Appointment</h1>
-
 <a href="https://covid-19.ontario.ca/book-vaccine/">Visit covid-19.ontario.ca!</a>
 <br>
 <a href="https://covid-19.ontario.ca/book-vaccine/">
 <img src="https://www.ctvnews.ca/polopoly_fs/1.5368153.1617121022!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg" height="300" width="500" alt="COVID-19 vaccine clinic in Ottawa"></a>
 <br>
-<form action="/action_page.php">
-  <label for="fname"><strong>1.What is your name:</strong></label><br>
-  <input type="text" id="fname" name="fname"><br>
-  
+<div class="content">
+      <form action="index.php" name="my form" method="POST" autocomplete="on">
+      <label for="fname"><strong>1.What is your name:</strong></label><br>
+      <input type="text" id="fname" name="fname"><br>
+      
   <p><strong>2.Your gender:</strong></p>
   <input type="radio" id="male" name="gender" value="male">
   <label for="male">Male</label><br>
@@ -27,7 +25,7 @@
   <label for="female">Female</label><br>
   <input type="radio" id="other" name="gender" value="other">
   <label for="other">Other</label><br>
-  
+       
   <p><strong>3.Which area are you living in:<strong></p>
   <label for="area">Choose an area:</label>
   <select id="area" name="area">
@@ -37,7 +35,7 @@
     <option value="Orleans">Orleans</option>
   </select>
   
-  <p><strong>4.Did you have any symptoms:</strong></p>
+    <p><strong>4.Did you have any symptoms:</strong></p>
   <input type="checkbox" id="symptom1" name="symptom1" value="fever">
   <label for="symptom1">Fever</label><br>
   <input type="checkbox" id="symptom2" name="symptom2" value="dry cough">
@@ -51,13 +49,12 @@
   <textarea name="message" rows="10" cols="30"></textarea><br>
   
   <input type="submit" value="Submit">
-</form> 
-
-<div class="footer-basic">
-	<footer>
-        <p class="copyright">Website designed by Iris Ji</p>
+	  </form>
+	</div> 
+	  <div class="footer-basic">
+        <footer>
+            <p class="copyright">Website designed by Iris Ji</p>
         </footer>
-</div>
-
+    </div>
 </body>
 </html>
