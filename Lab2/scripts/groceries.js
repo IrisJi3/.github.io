@@ -6,7 +6,7 @@ var products = [
 		name: "Non-dairy milk",
 		lactose_intolerant: true,
 		nuts_allergic: true,
-		price: 2.99
+		price: 1.99
 	},
 	{
 		name: "milk",
@@ -18,7 +18,7 @@ var products = [
 		name: "peanut butter",
 		lactose_intolerant: true,
 		nuts_allergic: false,
-		price: 15.00
+		price: 10.00
 	}
 ];
 	
