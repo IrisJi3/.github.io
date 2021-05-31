@@ -3,9 +3,9 @@
 
 var products = [
 	{
-		name: "Nut milk",
-		lactose_intolerant: false,
-		nuts_allergic: false,
+		name: "Non-dairy milk",
+		lactose_intolerant: true,
+		nuts_allergic: true,
 		price: 2.99
 	},
 	{
@@ -30,10 +30,10 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Lactose-intolerant") && (prods[i].lactose_intolerant == false)){
+		if ((restriction == "Lactose-intolerant") && (prods[i].lactose_intolerant == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "Nuts-allergic") && (prods[i].nuts_allergic == false)){
+		else if ((restriction == "Nuts-allergic") && (prods[i].nuts_allergic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
