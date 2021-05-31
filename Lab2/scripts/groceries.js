@@ -30,10 +30,10 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Lactose-intolerant") && (prods[i].lactose_intolerant == true)){
+		if ((restriction == "Lactose-intolerant") && (prods[i].lactose_intolerant == false)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "Nuts-allergic") && (prods[i].nuts_allergic == true)){
+		else if ((restriction == "Nuts-allergic") && (prods[i].nuts_allergic == false)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
