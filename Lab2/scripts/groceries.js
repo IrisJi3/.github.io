@@ -4,20 +4,20 @@
 var products = [
 	{
 		name: "Nut milk",
-		lactose_intolerant: true,
-		nuts_allergic: true,
+		lactose_intolerant: false,
+		nuts_allergic: false,
 		price: 2.99
 	},
 	{
 		name: "milk",
-		lactose_intolerant: true,
-		nuts_allergic: false,
+		lactose_intolerant: false,
+		nuts_allergic: true,
 		price: 2.35
 	},
 	{
 		name: "peanut butter",
-		lactose_intolerant: false,
-		nuts_allergic: true,
+		lactose_intolerant: true,
+		nuts_allergic: false,
 		price: 15.00
 	}
 ];
