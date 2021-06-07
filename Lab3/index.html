@@ -7,8 +7,6 @@
 
 <body>
 
-<h1>Grocery Site</h1>
-
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
@@ -24,8 +22,7 @@
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
 	<option value="lactose_intolerant">lactose_intolerant</option>
-        <option value="nuts_allergic">nuts_allergic</option>
-	<option value="vegetarian">vegetarian</option>
+    <option value="nuts_allergic">nuts_allergic</option>
     <option value="None">None</option>
 	</select>
 </div>
@@ -44,17 +41,10 @@
   <h3>Cart</h3>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
-	<button id="complete" type="button" class="button order" >
-		Complete Order
-	</button>
 </div>
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
-	
-<footer>
-            <p class="copyright">Website designed by Iris Ji</p>
-        </footer>
 
 </body>
 </html>
