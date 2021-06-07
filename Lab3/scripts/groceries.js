@@ -4,22 +4,40 @@
 var products = [
 	{
 		name: "Non-dairy milk",
-		lactose_intolerant: true,
-		nuts_allergic: true,
+		lactosefree: true,
+		nutallergy: true,
+		vegetarian: false,
 		price: 1.99
 	},
 	{
 		name: "milk",
-		lactose_intolerant: false,
-		nuts_allergic: true,
+		lactosefree: false,
+		nutallergy: true,
+		vegetarian: false,
 		price: 2.35
 	},
 	{
 		name: "peanut butter",
-		lactose_intolerant: true,
-		nuts_allergic: false,
+		lactosefree: true,
+		nutallergy: false,
+		vegetarian: false,
 		price: 10.00
 	}
+	{
+		name: "potato",
+		lactosefree: true,
+		nutallergy: true,
+		vegetarian: true,
+		price: 5.00
+	}
+	{
+		name: "pork",
+		lactosefree: true,
+		nutallergy: true,
+		vegetarian: false,
+		price: 15.00
+	}
+	
 ];
 	
 
@@ -30,10 +48,13 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "lactose_intolerant") && (prods[i].lactose_intolerant == true)){
+		if ((restriction == "lactosefree") && (prods[i].lactosefree == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "nuts_allergic") && (prods[i].nuts_allergic == true)){
+		else if ((restriction == "nutallergy") && (prods[i].nutallergy == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
