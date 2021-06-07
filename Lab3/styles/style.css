@@ -1,3 +1,4 @@
+  
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 
 /* Style the tab */
@@ -26,13 +27,6 @@
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
-}
-
-h1{
-  font-size: 40px;
-  text-align: center;
-
-
 }
 
 /* Style the tab content */
