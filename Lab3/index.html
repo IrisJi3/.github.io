@@ -21,12 +21,15 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="lactose_intolerant">lactose_intolerant</option>
-    <option value="nuts_allergic">nuts_allergic</option>
-    <option value="None">None</option>
-	</select>
+	<br>
+  <input type="checkbox" id="symptom1" name="symptom1" value="lactosefree">
+  <label for="symptom1">Fever</label><br>
+  <input type="checkbox" id="symptom2" name="symptom2" value="nutallergy">
+  <label for="symptom2">Dry cough</label><br>
+  <input type="checkbox" id="symptom3" name="symptom3" value="vegetarian">
+  <label for="symptom3">Tiredness</label><br>
+  <input type="checkbox" id="symptom4" name="symptom4" value="None">
+  <label for="symptom4">None</label><br><br>
 </div>
 
 <div id="Products" class="tabcontent">
