@@ -47,14 +47,37 @@ function populateListProductChoices(slct1, slct2) {
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
-		checkbox.value = productName;
+		for (let k = 0; k<products.length; k++){
+			if(products[k].name===productName){
+				price = products[k].price;
+			}
+		}
+		productDetail = productName + '  ' + price;
+		checkbox.value = productDetail;
 		s2.appendChild(checkbox);
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
-		s2.appendChild(label);
+		label.appendChild(document.createTextNode(productDetail));
+		if(productName=="Non-dairy milk")
+		{
+			pic.src="pictures/non_dairy_milk.png";
+			pic.height=150;
+			pic.width=150;
+		}
+		else if(productName=="milk")
+		{
+			pic.src="pictures/nutmilk.jpeg";
+			pic.height=100;
+			pic.width=100;
+		}
+		else if(productName=="peanut butter")
+		{
+			pic.src="pictures/peanutbutter.jpg";
+			pic.height=100;
+			pic.width=100;
+		}
 		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
