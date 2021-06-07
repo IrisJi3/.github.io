@@ -22,7 +22,7 @@ var products = [
 		nuts_allergic: false,
 		vegetarian: true,
 		price: 10.00
-	}
+	},
 	{
 		name: "pork",
 		lactose_intolerant: true,
