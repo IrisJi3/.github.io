@@ -43,44 +43,17 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
-		var pic = document.createElement("img");
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
-		for (let k = 0; k<products.length; k++){
-			if(products[k].name===productName){
-				price = products[k].price;
-			}
-		}
-		product = productName + price;
-		checkbox.value = product;
+		checkbox.value = productName;
 		s2.appendChild(checkbox);
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
-		label.htmlFor = product;
-		label.appendChild(document.createTextNode(product));
-		if(productName=="Non-dairy milk")
-		{
-			pic.src="pictures/non_dairy_milk.png";
-			pic.height=200;
-			pic.width=200;
-		}
-		else if(productName=="milk")
-		{
-			pic.src="pictures/nutmilk.jpeg";
-			pic.height=200;
-			pic.width=200;
-		}
-		else if(productName=="peanut butter")
-		{
-			pic.src="pictures/peanutbutter.jpg";
-			pic.height=200;
-			pic.width=200;
-		}
-		label.appendChild(document.createElement("br"));
-		label.appendChild(pic);
+		label.htmlFor = productName;
+		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
@@ -96,10 +69,10 @@ function selectedItems(){
 	
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
-	var priceList=[];
+	
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
-	document.getElementById("texto").innerHTML="added";
+	
 	// build list of selected item
 	var para = document.createElement("P");
 	para.innerHTML = "You selected : ";
@@ -109,8 +82,6 @@ function selectedItems(){
 			para.appendChild(document.createTextNode(ele[i].value));
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
-			var price = parseFloat(ele[i].value.substr(ele[i].value.length - 4));
-			priceList.push(price);
 		}
 	}
 		
