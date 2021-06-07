@@ -1,31 +1,24 @@
+// Array of products, each product is an object with different fieldset
+// A set of ingredients should be added to products		 
+
 var products = [
 	{
 		name: "Non-dairy milk",
 		lactose_intolerant: true,
 		nuts_allergic: true,
-		vegetarian: true,
 		price: 1.99
 	},
 	{
 		name: "milk",
 		lactose_intolerant: false,
 		nuts_allergic: true,
-		vegetarian: true,
 		price: 2.35
 	},
 	{
 		name: "peanut butter",
 		lactose_intolerant: true,
 		nuts_allergic: false,
-		vegetarian: true,
 		price: 10.00
-	}
-	{
-		name: "pork",
-		lactose_intolerant: true,
-		nuts_allergic: true,
-		vegetarian: false,
-		price: 15.00
 	}
 ];
 	
@@ -41,9 +34,6 @@ function restrictListProducts(prods, restriction) {
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "nuts_allergic") && (prods[i].nuts_allergic == true)){
-			product_names.push(prods[i].name);
-		}
-		else if ((restriction == "vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
