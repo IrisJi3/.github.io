@@ -43,6 +43,9 @@ function restrictListProducts(prods, restriction) {
 		else if ((restriction == "nuts_allergic") && (prods[i].nuts_allergic == true)){
 			product_names.push(prods[i].name);
 		}
+		else if ((restriction == "vegetarian") && (prods[i].vegetarian == true)){
+			product_names.push(prods[i].name);
+		}
 		else if (restriction == "None"){
 			product_names.push(prods[i].name);
 		}
