@@ -43,6 +43,7 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
+		var pic = document.createElement("img");
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -78,7 +79,9 @@ function populateListProductChoices(slct1, slct2) {
 			pic.height=100;
 			pic.width=100;
 		}
-		
+		label.appendChild(document.createElement("br"));
+		label.appendChild(pic);
+		s2.appendChild(label);
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
@@ -92,7 +95,7 @@ function selectedItems(){
 	
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
-	
+	var priceList=[];
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
 	
@@ -105,11 +108,13 @@ function selectedItems(){
 			para.appendChild(document.createTextNode(ele[i].value));
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
+			var price = parseFloat(ele[i].value.substr(ele[i].value.length - 4));
+			priceList.push(price); 
 		}
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(priceList)));
 		
 }
