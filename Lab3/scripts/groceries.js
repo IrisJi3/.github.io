@@ -6,21 +6,21 @@ var products = [
 		name: "Non-dairy milk",
 		lactosefree: true,
 		nutallergy: true,
-		vegetarian: false,
+		vegetarian: true,
 		price: 1.99
 	},
 	{
 		name: "milk",
 		lactosefree: false,
 		nutallergy: true,
-		vegetarian: false,
+		vegetarian: true,
 		price: 2.35
 	},
 	{
 		name: "peanut butter",
 		lactosefree: true,
 		nutallergy: false,
-		vegetarian: false,
+		vegetarian: true,
 		price: 10.00
 	}
 	{
