@@ -1,43 +1,32 @@
-// Array of products, each product is an object with different fieldset
-// A set of ingredients should be added to products		 
-
 var products = [
 	{
 		name: "Non-dairy milk",
-		lactosefree: true,
-		nutallergy: true,
+		lactose_intolerant: true,
+		nuts_allergic: true,
 		vegetarian: true,
 		price: 1.99
 	},
 	{
 		name: "milk",
-		lactosefree: false,
-		nutallergy: true,
+		lactose_intolerant: false,
+		nuts_allergic: true,
 		vegetarian: true,
 		price: 2.35
 	},
 	{
 		name: "peanut butter",
-		lactosefree: true,
-		nutallergy: false,
+		lactose_intolerant: true,
+		nuts_allergic: false,
 		vegetarian: true,
 		price: 10.00
 	}
 	{
-		name: "potato",
-		lactosefree: true,
-		nutallergy: true,
-		vegetarian: true,
-		price: 5.00
-	}
-	{
 		name: "pork",
-		lactosefree: true,
-		nutallergy: true,
+		lactose_intolerant: true,
+		nuts_allergic: true,
 		vegetarian: false,
 		price: 15.00
 	}
-	
 ];
 	
 
@@ -48,20 +37,16 @@ var products = [
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "lactosefree") && (prods[i].lactosefree == true)){
+		if ((restriction == "lactose_intolerant") && (prods[i].lactose_intolerant == true)){
 			product_names.push(prods[i].name);
 		}
-		else if ((restriction == "nutallergy") && (prods[i].nutallergy == true)){
-			product_names.push(prods[i].name);
-		}
-		else if ((restriction == "vegetarian") && (prods[i].vegetarian == true)){
+		else if ((restriction == "nuts_allergic") && (prods[i].nuts_allergic == true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
 			product_names.push(prods[i].name);
 		}
 	}
-	
 	return product_names;
 }
 
