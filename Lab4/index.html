@@ -113,8 +113,29 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <strong>Attention!</strong> Please complete the <strong>questionnaire</strong> before your arrival.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+	
+	    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
 
-    <h1>Contact</h1>
+    <h1>Meet the Veterinarian!</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. Sandy Brown</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Dr. Amy Robert</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>Feedback</h1>
 
     <!-- Button trigger modal
     We use the same button code from above, but now we can trigger a modal to appear.
@@ -155,26 +176,6 @@ Many websites will use what is called CSS grid layouts, where you will have a he
   </div>
 </div>
 
-    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
-    They can be organized using a CSS grid or other layout options.
-    https://getbootstrap.com/docs/5.0/components/card/
-    -->
-
-    <h1>Meet the Physicians!</h1>
-    <div class="row justify-content-around">
-        <div class="card" style="width: 18rem;">
-            <img src="images/doctor.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Here is some filler text, in here you can describe your doctor</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="images/doctor.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Here is some filler text, in here you can describe your doctor</p>
-            </div>
-        </div>
-    </div>
 
     <!--
     We can also use buttons to expand some hidden options
@@ -200,31 +201,31 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
+                    How to book an appointment?
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
+                <div class="accordion-body">Please contact us with 123456789.</div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
+                    What can I do in an emergency?
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
+                <div class="accordion-body">In case of emergency, please call our hospital or transport your pet immediately to our facility. </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
+                    What kind of wellness plans do you have?
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can place information in this area</div>
+                <div class="accordion-body">Preventive nose-to-tail care.<strong>Learn more</strong></div>
             </div>
         </div>
     </div>
