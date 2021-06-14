@@ -8,3 +8,46 @@ p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+body{
+	background-color:#669900;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+	margin-right: 190px;
+  font-family: 'Ubuntu';
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar {
+	z-index: 1;
+	background-color:#003300;
+    text-align:center;
+}
+
+h1 {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 1000;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+h2 {
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 0.5;
+}
+#features{
+	padding: 7% 15%;
+}
+.features-box{
+text-align:center;
+padding-top: 2%;
+transition: background-color 3s;
+transition: color 3s;
+}
+
+.features-box:hover{
+background-color:#ADAD5A;
+color:#FFF;
+}

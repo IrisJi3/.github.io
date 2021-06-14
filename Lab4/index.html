@@ -26,64 +26,95 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/navbar/
     -->
     <div class="p-3 mb-2 bg-warning text-dark">State of emergency declared. See COVID-19 updates and check for location, program and service closures, cancellations and changes.</div>
+	
+	<section id="title">
 
-    <nav class="navbar bg-info text-white p-3 my-3 ">
-        <h1><img src="images/petLogo.jpg" width="130" height="130"> Welcome to my Pet Clinicヽ(=^･ω･^=)丿</h1>
+    <div class="container-fluid">
+	<nav class="navbar navbar-expand-md navbar-dark">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+            <ul class="navbar-nav ml-auto">
+            
+             <li class="nav-item">
+                    <a class="nav-link" href="#home" style="text-align:center">
+                       Home
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">
+                       Appointment
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">
+                        Pricing
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">
+                        Download
+                    </a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">
+                        Contact
+                    </a>
+                </li>
+               
+            </ul>
+
+        </div>
+
     </nav>
 
-    <div class=" p-3 my-3 border bg-light">
-        <h1 class=""> About us</h1>
-        <p class="p-4 my-3" style="font-size: 25px">We are a small clinic located in Smiths Falls Ontario</p>
-        <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
+    <nav class="navbar bg-success text-white p-3 my-3 ">
+        <h1><img src="images/petLogo.jpg" width="130" height="130"> Welcome to my Pet Clinic</h1>
+    </nav>
+
+  <section id="features">
+
+
+    <div class="row">
+    <div class="features-box col-lg-4">
+    <i class="fas fa-check-circle fa-4x icon"></i>
+    <h3>Easy to book</h3>
+    <p>all you have to do is book and send, we will do all things for your pets after booking.</p>
+     </div>
+     <div class="features-box col-lg-4">
+     <i class="fas fa-bullseye fa-4x icon"></i>
+    <h3>Consultations and Vaccinations.</h3>
+    <p>We have all different kinds of service, medical examination and vaccinations. </p>
     </div>
+    <div class="features-box col-lg-4">
+    <i class="fas fa-heart fa-4x icon"></i>
+    <h3>feedback.</h3>
+    <p>if you like to know somthing about us. then contact us will be opon fot question you be opon for answer.</p>
+    </div>
+    
+    </div>
+
+  </section>
+
     <!--
     Tables are one of many ways to organize information easily.
     It is a good way to list of prices, or services in a business website
     https://getbootstrap.com/docs/5.0/content/tables/
     -->
-    <table class="table table-info table-hover">
-        <thead>
-            <tr>
-                <th scope="col"><h2>Service</h2></th>
-                <th scope="col"><h2>Description</h2></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
-            </tr>
-            <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
-            </tr>
-            <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
-            </tr>
-        </tbody>
-    </table>
-    <h1>Here is an alert!</h1>
+    <h1>Covid-19 updates</h1>
     <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
     https://getbootstrap.com/docs/5.0/components/alerts/
     -->
-    <p>This indicated something important in the page</p>
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Yikes!</strong> Perhaps you left one of the fields empty for this to appear?
+        <strong>Attention!</strong> Please complete the <strong>questionnaire</strong> before your arrival.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
-    <h1>Button States</h1>
-    <!--
-    Buttons can be used for submitting forms, triggering events among many other things.
-    https://getbootstrap.com/docs/5.0/components/buttons/
-    -->
-
-    <button type="button" class="btn btn-warning">Primary Button</button>
-    <button type="button" class="btn btn-warning active">Active Button</button>
-    <button type="button" class="btn btn-warning" disabled>Disabled Button</button>
-
-    <h1>Modal Example</h1>
+    <h1>Contact</h1>
 
     <!-- Button trigger modal
     We use the same button code from above, but now we can trigger a modal to appear.
@@ -91,39 +122,38 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/modal/
     -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+        Contact us
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    In the body we can add various components. In this example some radio buttons
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            No
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
     </div>
+  </div>
+</div>
 
     <!-- Cards are quite useful when building a website. They are a useful way to organize information.
     They can be organized using a CSS grid or other layout options.
