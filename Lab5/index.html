@@ -240,8 +240,29 @@ Many websites will use what is called CSS grid layouts, where you will have a he
        min="2018-01-01" max="2099-12-31"></p>
           </div>
 		  <div class="form-group">
-            <label for="message-text" class="col-form-label">What service to book:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <label for="service-select" class="col-form-label">What service to book:</label>
+            <select name="pets" id="service-select">
+    <option value="">--Please choose an option--</option>
+    <option value="exams">Annual physical exams</option>
+    <option value="treatment">Disease and illness diagnostics and treatments</option>
+    <option value="vaccinations">Vaccinations</option>
+    <option value="spay">Spaying and neutering</option>
+    <option value="surgery">Surgery</option>
+</select></div>
+		  <div class="form-group">
+            <label for="doctor-select" class="col-form-label">Which veterinarian to book:</label>
+            <select name="pets" id="doctor-select">
+    <option value="">--Please choose an option--</option>
+    <option value="sandy">Dr. Sandy Brown</option>
+    <option value="amy">Dr. Amy Robert</option>
+    <option value="mary">Dr. Mary Green</option>
+</select>
+          </div>
+		  <div class="form-group">
+            <label for="email">Enter your email:</label>
+
+<input type="email" id="email"
+       pattern=".+@globex\.com" size="30" required>
           </div>
           <div class="form-group">
             <label for="message-text" class="col-form-label">Message:</label>
