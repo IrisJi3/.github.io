@@ -14,6 +14,19 @@ This will help you get started with your code!
     <title>Veterinary business</title>
 </head>
 <style>
+.button1 {
+    background-color: #003300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width: 60%;
+}
 .button {
     background-color: #003300;
     border: none;
@@ -25,6 +38,7 @@ This will help you get started with your code!
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+	width: 100%;
 }
 </style>
 <body>
@@ -187,16 +201,17 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 		<br>
 
 
-    <h1><img src="images/appointment.png" alt="logo" style="width:50px;">Make an appointment!<img src="images/icon6.png" alt="logo" style="width:50px;"></h1>
+    <h1><img src="images/appointment.png" alt="logo" style="width:50px;">Make an appointment!<img src="images/icon6.png" alt="logo" style="width:50px;">
 
     <!-- Button trigger modal
     We use the same button code from above, but now we can trigger a modal to appear.
     The bootstrap tutorial includes many different types of modals that you can explore
     https://getbootstrap.com/docs/5.0/components/modal/
     -->
-    <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Make an appointment!
     </button>
+	</h1>
 
     <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -223,6 +238,10 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             <input type="date" id="start" name="trip-start"
        value=""
        min="2018-01-01" max="2099-12-31"></p>
+          </div>
+		  <div class="form-group">
+            <label for="message-text" class="col-form-label">What service to book:</label>
+            <textarea class="form-control" id="message-text"></textarea>
           </div>
           <div class="form-group">
             <label for="message-text" class="col-form-label">Message:</label>
