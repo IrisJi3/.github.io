@@ -1,0 +1,280 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Veterinary business</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Attention!</strong> Please complete the <strong>questionnaire</strong> before your arrival.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!--<div class="p-3 mb-2 bg-warning text-dark">State of emergency declared. See COVID-19 updates and check for location, program and service closures, cancellations and changes.</div>-->
+	
+	<section id="title">
+
+    <div class="container-fluid">
+	<nav class="navbar navbar-expand-md navbar-dark">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+            <ul class="navbar-nav ml-auto">
+            
+             <li class="nav-item">
+                    <a class="nav-link" href="#home" style="text-align:center"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                       Home
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                       Appointment
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                        Pricing
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                        Download
+                    </a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                        Contact
+                    </a>
+                </li>
+               
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <nav class="navbar bg-success text-white p-3 my-3 ">
+        <h1><img src="images/petLogo.jpg" width="130" height="130"> Welcome to my Pet Clinic</h1>
+		<td><p>800 King Edward Ave, Ottawa, ON K1N 6N5</p></td>
+    </nav>
+
+  <section id="features">
+
+
+    <div class="row">
+    <div class="features-box col-lg-4">
+    <i class="fas fa-check-circle fa-4x icon"></i>
+    <h3>Easy to book</h3>
+    <p>all you have to do is book and send, we will do all things for your pets after booking.</p>
+     </div>
+     <div class="features-box col-lg-4">
+     <i class="fas fa-bullseye fa-4x icon"></i>
+    <h3>Consultations and Vaccinations.</h3>
+    <p>We have all different kinds of service, medical examination and vaccinations. </p>
+    </div>
+    <div class="features-box col-lg-4">
+    <i class="fas fa-heart fa-4x icon"></i>
+    <h3>feedback.</h3>
+    <p>if you like to know somthing about us. then contact us will be opon fot question you be opon for answer.</p>
+    </div>
+    
+    </div>
+
+  </section>
+
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+    
+	    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Main Service</h2></th>
+                <th scope="col"><h2>Description</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Annual physical exams</td>
+                <td>The physical exam is an essential part of any veterinarian's visit.</td>
+            </tr>
+            <tr>
+                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Disease and illness diagnostics and treatments </td>
+                <td>Your veterinarian will try to rule out physical problems that could cause your pet's symptoms.</td>
+            </tr>
+            <tr>
+                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Vaccinations</td>
+                <td>The core vaccines include the DHLPP (distemper, hepatitis, leptospirosis, parvo, and parainfluenza).</td>
+            </tr>
+			<tr>
+                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Spaying and neutering</td>
+                <td>The ovaries, fallopian tubes and uterus are removed from a female dog or cat.</td>
+            </tr>
+			<tr>
+                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Surgery</td>
+                <td>Surgery always carries with it numerous concerns ranging from potential complications to prognosis for recovery.</td>
+            </tr>
+        </tbody>
+    </table>
+	    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <h1>Meet the Veterinarian!</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><img src="images/icon5.png" alt="logo" style="width:40px;">Dr. Sandy Brown</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><img src="images/icon5.png" alt="logo" style="width:40px;">Dr. Amy Robert</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><img src="images/icon5.png" alt="logo" style="width:40px;">Dr. Mary Green</p>
+            </div>
+        </div>
+		</div>
+
+
+    <h1>Feedback</h1>
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Contact us
+    </button>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    <h1>More Information</h1>
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How to book an appointment?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Please contact us with 123456789.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What can I do in an emergency?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">In case of emergency, please call our hospital or transport your pet immediately to our facility. </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What kind of wellness plans do you have?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Preventive nose-to-tail care.<strong>Learn more</strong></div>
+            </div>
+        </div>
+    </div>
+	
+	<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Any questions to us?
+    </button>
+
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+           please enter your <strong>questions</strong>
+        </div>
+    </div>
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	</div> 
+	  <div class="footer-basic">
+        <footer>
+            <p class="copyright">Website designed by Iris Ji</p>
+        </footer>
+    </div>
+</body>
+</html>
