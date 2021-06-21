@@ -80,8 +80,8 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     </nav>
 
     <nav class="navbar bg-success text-white p-3 my-3 ">
-        <h1><img src="images/petLogo.jpg" width="130" height="130"> Welcome to my Pet Clinic</h1>
-		<td><p>800 King Edward Ave, Ottawa, ON K1N 6N5</p></td>
+        <h1><img src="images/petLogo.png" width="100" height="100"> Welcome to my Pet Clinic</h1>
+		<td><p><img src="images/location.png" alt="logo" style="width:30px;">800 King Edward Ave, Ottawa, ON K1N 6N5</p></td>
     </nav>
 
   <section id="features">
@@ -117,29 +117,29 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 	    <table class="table table-info table-hover">
         <thead>
             <tr>
-                <th scope="col"><h2>Main Service</h2></th>
-                <th scope="col"><h2>Description</h2></th>
+                <th scope="col"><h2><img src="images/service.png" alt="logo" style="width:50px;">Main Service</h2></th>
+                <th scope="col"><h2><img src="images/description.png" alt="logo" style="width:50px;">Description</h2></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Annual physical exams</td>
+                <td><img src="images/exam.png" alt="logo" style="width:30px;">Annual physical exams</td>
                 <td>The physical exam is an essential part of any veterinarian's visit.</td>
             </tr>
             <tr>
-                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Disease and illness diagnostics and treatments </td>
+                <td><img src="images/treatments.png" alt="logo" style="width:30px;">Disease and illness diagnostics and treatments </td>
                 <td>Your veterinarian will try to rule out physical problems that could cause your pet's symptoms.</td>
             </tr>
             <tr>
-                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Vaccinations</td>
+                <td><img src="images/vaccinations.png" alt="logo" style="width:30px;">Vaccinations</td>
                 <td>The core vaccines include the DHLPP (distemper, hepatitis, leptospirosis, parvo, and parainfluenza).</td>
             </tr>
 			<tr>
-                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Spaying and neutering</td>
+                <td><img src="images/spay.png" alt="logo" style="width:30px;">Spaying and neutering</td>
                 <td>The ovaries, fallopian tubes and uterus are removed from a female dog or cat.</td>
             </tr>
 			<tr>
-                <td><img src="images/icon3.jpg" alt="logo" style="width:30px;">Surgery</td>
+                <td><img src="images/surgery.png" alt="logo" style="width:30px;">Surgery</td>
                 <td>Surgery always carries with it numerous concerns ranging from potential complications to prognosis for recovery.</td>
             </tr>
         </tbody>
@@ -149,7 +149,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1>Meet the Veterinarian!</h1>
+    <h1><img src="images/doctor.png" alt="logo" style="width:50px;">Meet the Veterinarian!</h1>
     <div class="row justify-content-around">
         <div class="card" style="width: 18rem;">
             <img src="images/doctor1.jpg" class="card-img-top" alt="...">
@@ -170,9 +170,21 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             </div>
         </div>
 		</div>
+		<br>
+
+	<div class="container" id="third">
+    <h1><img src="images/appointment.png" alt="logo" style="width:50px;">Make an appointment!<img src="images/icon6.png" alt="logo" style="width:50px;"></h1>
+	<p>Your name: <input value="" id="name" type="text"></p>
+	<p>Your pet's name: <input value="" id="petname" type="text"></p>
+    <p>Book date:</p><p><input type="date" id="start" name="trip-start"
+       value="2021-06-20"
+       min="2018-01-01" max="2099-12-31"></p>
+    <p>Phone Number: <input value="" type="text" id="phone"></p>
+    <p>Credit Card: </p><p><input type="text" id="debit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+</div>
 
 
-    <h1>Feedback</h1>
+    <h1><img src="images/feedback.png" alt="logo" style="width:50px;">Feedback</h1>
 
     <!-- Button trigger modal
     We use the same button code from above, but now we can trigger a modal to appear.
