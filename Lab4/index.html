@@ -25,7 +25,14 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
     https://getbootstrap.com/docs/5.0/components/navbar/
     -->
-    <div class="p-3 mb-2 bg-warning text-dark">State of emergency declared. See COVID-19 updates and check for location, program and service closures, cancellations and changes.</div>
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Attention!</strong> Please complete the <strong>questionnaire</strong> before your arrival.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!--<div class="p-3 mb-2 bg-warning text-dark">State of emergency declared. See COVID-19 updates and check for location, program and service closures, cancellations and changes.</div>-->
 	
 	<section id="title">
 
@@ -105,15 +112,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     It is a good way to list of prices, or services in a business website
     https://getbootstrap.com/docs/5.0/content/tables/
     -->
-    <h1>Covid-19 updates</h1>
-    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
-    https://getbootstrap.com/docs/5.0/components/alerts/
-    -->
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Attention!</strong> Please complete the <strong>questionnaire</strong> before your arrival.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-	
+    
 	    <table class="table table-info table-hover">
         <thead>
             <tr>
@@ -123,16 +122,24 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         </thead>
         <tbody>
             <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
+                <td>Annual physical exams</td>
+                <td>The physical exam is an essential part of any veterinarian's visit.</td>
             </tr>
             <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
+                <td>Disease and illness diagnostics and treatments </td>
+                <td>Your veterinarian will try to rule out physical problems that could cause your pet's symptoms.</td>
             </tr>
             <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
+                <td>Vaccinations</td>
+                <td>The core vaccines include the DHLPP (distemper, hepatitis, leptospirosis, parvo, and parainfluenza).</td>
+            </tr>
+			<tr>
+                <td>Spaying and neutering</td>
+                <td>The ovaries, fallopian tubes and uterus are removed from a female dog or cat.</td>
+            </tr>
+			<tr>
+                <td>Surgery</td>
+                <td>Surgery always carries with it numerous concerns ranging from potential complications to prognosis for recovery.</td>
             </tr>
         </tbody>
     </table>
