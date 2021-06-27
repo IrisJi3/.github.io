@@ -19,10 +19,14 @@ body{
   font-weight: bold;
 }
 
+
+
 .navbar {
 	z-index: 1;
 	background-color:#003300;
     text-align:center;
+	  width: 100%;
+    overflow: auto;
 }
 
 h1 {

@@ -22,7 +22,7 @@ This will help you get started with your code!
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
     margin: 4px 2px;
     cursor: pointer;
 	width: 60%;
@@ -57,7 +57,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/alerts/
     -->
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Attention!</strong> Please complete the <strong>Covid-19 questionnaire</strong> before your arrival.
+        <strong>Attention!</strong> Please wear <strong>mask</strong> before your arrival.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <!--<div class="p-3 mb-2 bg-warning text-dark">State of emergency declared. See COVID-19 updates and check for location, program and service closures, cancellations and changes.</div>-->
@@ -72,31 +72,37 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             <ul class="navbar-nav ml-auto">
             
              <li class="nav-item">
-                    <a class="nav-link" href="#home" style="text-align:center"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                    <a class="nav-link" href="#home" style="text-align:center"><img src="images/petLogo.png" alt="logo" style="width:30px;">
                        Home
                     </a>
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link" href="#testimonials"><img src="images/icon1.png" alt="logo" style="width:30px;">
-                       Appointment
+                    <a class="nav-link" href="#service"><img src="images/service.png" alt="logo" style="width:30px;">
+                       Service
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#pricing"><img src="images/icon1.png" alt="logo" style="width:30px;">
-                        Pricing
+                    <a class="nav-link" href="#veterinarian"><img src="images/doctor.png" alt="logo" style="width:30px;">
+                        Veterinarian
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#cta"><img src="images/icon1.png" alt="logo" style="width:30px;">
-                        Download
+                    <a class="nav-link" href="#appointment"><img src="images/appointment.png" alt="logo" style="width:30px;">
+                        Appointment
                     </a>
                 </li>
                
                 <li class="nav-item">
-                    <a class="nav-link" href="#footer"><img src="images/icon1.png" alt="logo" style="width:30px;">
+                    <a class="nav-link" href="#information"><img src="images/information.png" alt="logo" style="width:30px;">
+                        More Information
+                    </a>
+                </li>
+				
+				<li class="nav-item">
+                    <a class="nav-link" href="#contact"><img src="images/feedback.png" alt="logo" style="width:30px;">
                         Contact
                     </a>
                 </li>
@@ -107,10 +113,12 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 
     </nav>
 
-    <nav class="navbar bg-success text-white p-3 my-3 ">
+    <nav class="navbar bg-success text-white p-3 my-3 " id="home">
         <h1><img src="images/petLogo.png" width="100" height="100"> Welcome to my Pet Clinic</h1>
 		<td><p><img src="images/location.png" alt="logo" style="width:30px;">800 King Edward Ave, Ottawa, ON K1N 6N5</p></td>
     </nav>
+	
+	<img src="images/head.jpg" width=100% height=100%>
 
   <section id="features">
 
@@ -118,7 +126,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     <div class="row">
     <div class="features-box col-lg-4">
     <i class="fas fa-check-circle fa-4x icon"></i>
-    <h3>Easy to book</h3>
+    <h3>Easy to book.</h3>
     <p>all you have to do is book and send, we will do all things for your pets after booking.</p>
      </div>
      <div class="features-box col-lg-4">
@@ -128,7 +136,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     </div>
     <div class="features-box col-lg-4">
     <i class="fas fa-heart fa-4x icon"></i>
-    <h3>feedback.</h3>
+    <h3>Feedback.</h3>
     <p>if you like to know somthing about us. then contact us will be opon fot question you be opon for answer.</p>
     </div>
     
@@ -142,7 +150,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/content/tables/
     -->
     
-	    <table class="table table-info table-hover">
+	    <table class="table table-info table-hover" id="service">
         <thead>
             <tr>
                 <th scope="col"><h2><img src="images/service.png" alt="logo" style="width:50px;">Main Service</h2></th>
@@ -177,7 +185,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1><img src="images/doctor.png" alt="logo" style="width:50px;">Meet the Veterinarian!</h1>
+    <h1><img src="images/doctor.png" alt="logo" id="veterinarian" style="width:50px;">Meet the Veterinarian!</h1>
     <div class="row justify-content-around">
         <div class="card" style="width: 18rem;">
             <img src="images/doctor1.jpg" class="card-img-top" alt="...">
@@ -201,9 +209,36 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         </div>
 		</div>
 		<br>
+		
+		  <section id="features">
 
 
-    <h1><img src="images/appointment.png" alt="logo" style="width:50px;">Make an appointment!<img src="images/icon6.png" alt="logo" style="width:50px;">
+    <div class="row">
+    <div class="features-box col-lg-4">
+    <i class="fas fa-check-circle fa-4x icon"></i>
+    <h3>It's nice to meet you</h3>
+    <p>After creating an account, enter a few details about yourself and where you reside. We always try to match you with a local qualified professional, if possible.</p>
+     </div>
+     <div class="features-box col-lg-4">
+     <i class="fas fa-bullseye fa-4x icon"></i>
+    <h3>Nicer to meet your pet</h3>
+    <p>Each pet will receive their own profile and medical history on Vetster. You can even choose to have records sent to your regular vet after an appointment.</p>
+    </div>
+    <div class="features-box col-lg-4">
+    <i class="fas fa-heart fa-4x icon"></i>
+    <h3>Book an appointment</h3>
+    <p>Enter your preferred date and time of appointment. We’re available when you need us, so the choice is yours! Plans change? Booking adjustments and cancellations are always free.</p>
+    </div>
+    
+    </div>
+
+  </section>
+
+
+    <h1><img src="images/appointment.png" alt="logo" id="appointment" style="width:50px;">Make an appointment!<img src="images/icon6.png" alt="logo" style="width:50px;">
+	
+	
+	
 
     <!-- Button trigger modal
     We use the same button code from above, but now we can trigger a modal to appear.
@@ -244,7 +279,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 		  <div class="form-group">
             <label for="service-select" class="col-form-label">What service to book:</label>
             <select name="pets" id="service-select">
-    <option value="">--Please choose an option--</option>
+
     <option value="exams">Annual physical exams</option>
     <option value="treatment">Disease and illness diagnostics and treatments</option>
     <option value="vaccinations">Vaccinations</option>
@@ -254,7 +289,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 		  <div class="form-group">
             <label for="doctor-select" class="col-form-label">Which veterinarian to book:</label>
             <select name="pets" id="doctor-select">
-    <option value="">--Please choose an option--</option>
+
     <option value="sandy">Dr. Sandy Brown</option>
     <option value="amy">Dr. Amy Robert</option>
     <option value="mary">Dr. Mary Green</option>
@@ -307,11 +342,14 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 </div>
 
 
+    
+
+
     <!--
     We can also use buttons to expand some hidden options
     https://getbootstrap.com/docs/5.0/components/collapse/
     -->
-    <h1><img src="images/feedback.png" alt="logo" style="width:50px;">More Information</h1>
+    <br><h1><img src="images/information.png" alt="logo" style="width:50px;">More Information</h1>
 
     <!-- This example is using what is called an accordian, this is one of three examples
     https://getbootstrap.com/docs/5.0/components/accordion/
@@ -348,8 +386,9 @@ Many websites will use what is called CSS grid layouts, where you will have a he
                 <div class="accordion-body">Preventive nose-to-tail care.<strong>Learn more</strong></div>
             </div>
         </div>
-    </div>
+    </div><br>
 	
+	<h1><img src="images/feedback.png" alt="logo" id="contact" style="width:50px;">Contact us!</h1>
 	<button class="button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Any questions to us? Click here
     </button>
